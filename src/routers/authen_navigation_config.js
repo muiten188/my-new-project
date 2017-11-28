@@ -1,14 +1,14 @@
-import Home from '../containers/Home';
+import Login from '../authen/containers/Login';
 import {
     addNavigationHelpers,
     StackNavigator,
 } from 'react-navigation';
 
 const stackNavigatorConfiguration = {
-    initialRouteName: 'Home',
+    initialRouteName: 'Login',
     headerMode: 'screen'
 }
 
-export const RootNavigationContainer = StackNavigator({
-    Home: { screen: Home }
+export const AuthenNavigationContainer = StackNavigator({
+    Login: { screen: Login }
 }, stackNavigatorConfiguration)

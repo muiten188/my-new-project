@@ -30,16 +30,9 @@ export default class Index extends Component {
             </Provider>
         );
     }
-
-//   render() {
-//     return (
-//       <View style={styles.container}>
-//         <Text>vao index roi</Text>
-//       </View>
-//     );
-//   }
 }
 
+// style trang index
 const styles = StyleSheet.create( {
     container: {
         flex: 1,
