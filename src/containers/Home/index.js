@@ -1,5 +1,9 @@
 import React, { Component } from 'react'
-import { Container, Spinner, Text } from 'native-base'
+import {
+    Container,
+    Text,
+    Button
+} from 'native-base'
 import styles from './styles'
 export default class extends Component {
     static navigationOptions = {
