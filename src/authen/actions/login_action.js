@@ -1,7 +1,7 @@
 import * as types from '../../store/constants/action_types';
 import * as AppConfig from '../../config/app_config';
 
-export function getListFilm() {
+export function Login() {
   return (dispatch) => {
     let oListFilm;
     fetch(`http://${AppConfig.CRAWLER_HOST}/oFilmSite/getListFilm?url=https://phim14.net&name=phim14`, {
@@ -23,7 +23,7 @@ export function getListFilm() {
 }
 export function login(oListFilm) {
   return {
-    type: types.login,
-    oListFilm
+    type: types.LOGIN_SUCCESS,
+    Logged:true
   }
 }

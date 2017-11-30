@@ -20,11 +20,12 @@ class login extends Component {
         header: null
     }
     render() {
-        debugger;
+        let {loginAction}=this.props;
+        debugger
         return (
             <Container style={styles.container}>
                 <Text>Login Screen</Text>
-                <TouchableOpacity style={theme.button} onPress={(e) => alert("kho khan qua thi ve day co anh cho")}>
+                <TouchableOpacity style={theme.button} onPress={(e) => loginAction.login()}>
                     <Text>Login</Text>
                 </TouchableOpacity>
             </Container>

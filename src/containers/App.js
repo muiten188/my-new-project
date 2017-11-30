@@ -5,13 +5,15 @@ import {
   Text,
   View
 } from 'react-native';
+import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux';
 import { Provider } from 'react-redux';
 
 import AuthenNavigation from '../routers/authen_navigation';
 import RootNavigaion from '../routers/root_navigation';
 
 
-export default class App extends Component {
+class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -20,7 +22,8 @@ export default class App extends Component {
   }
 
   render() {
-    if (!this.state.loged) {
+    let {loginReducer} =this.props;
+    if (!loginReducer || !loginReducer.Logged) {
       return (
         <AuthenNavigation />
       )
@@ -31,3 +34,10 @@ export default class App extends Component {
   }
 
 }
+function mapStateToProps(state, props) {
+  return {
+      loginReducer: state.loginReducer,
+  }
+};
+
+export default connect(mapStateToProps)(App);
