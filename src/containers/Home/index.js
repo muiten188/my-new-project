@@ -5,7 +5,8 @@ import {
     Button
 } from 'native-base'
 import styles from './styles'
-import Header from '../Header'
+import Header from '../../components/Header'
+
 export default class extends Component {
     static navigationOptions = {
         header: null
