@@ -21,7 +21,6 @@ class login extends Component {
     }
     render() {
         let {loginAction}=this.props;
-        debugger
         return (
             <Container style={styles.container}>
                 <Text>Login Screen</Text>
