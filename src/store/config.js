@@ -18,11 +18,18 @@ export default function storeConfig(callback) {
     const store = createStore(reducers,
         initialState,
         compose(
-            autoRehydrate(),
             applyMiddleware(...middleware),
             window.devToolsExtension ? window.devToolsExtension() : x => x
         )
     )
+    // const store = createStore(reducers,
+    //     initialState,
+    //     compose(
+    //         autoRehydrate(),
+    //         applyMiddleware(...middleware),
+    //         window.devToolsExtension ? window.devToolsExtension() : x => x
+    //     )
+    // )
      callback(store)
     //persistStore(store, { storage: AsyncStorage }, () => callback(store))
     // let createStoreWithMiddleware = applyMiddleware(thunk)(createStore);

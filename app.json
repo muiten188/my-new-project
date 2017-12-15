@@ -1,12 +1,12 @@
 {
   "expo": {
-    "name": "my-new-project",
+    "name": "my3233",
     "description": "An empty new project",
     "slug": "my-new-project",
     "privacy": "public",
     "sdkVersion": "23.0.0",
     "version": "1.0.0",
-    "orientation": "portrait",
+    "orientation": "landscape",
     "primaryColor": "#cccccc",
     "icon": "./src/resources/assets/icon.png",
     "splash": {
@@ -16,6 +16,9 @@
     },
     "ios": {
       "supportsTablet": true
+    },
+    "android": {
+      "package": "com.yourcompany.my3233"
     }
   }
 }

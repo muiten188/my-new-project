@@ -21,7 +21,7 @@ export default class Index extends Component {
 
     render() {
         const { store } = this.state
-        if (!store) {
+        if (true) {
             return (<AppLoading message="Initializing..." />)
         }
         return (
